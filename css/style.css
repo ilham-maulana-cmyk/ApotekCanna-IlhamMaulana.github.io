@@ -1,0 +1,173 @@
+:root {
+  --ilham-hijau: #0B6B52;
+  --ilham-hijau-tua: #084C3A;
+  --ilham-muda: #EAF4F0;
+  --ilham-teks: #1F2D2A;
+  --ilham-abu: #5B6B67;
+  --ilham-garis: #D5E0DC;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ilham-teks);
+  line-height: 1.6;
+  background: #fff;
+}
+h1, h2, h3 { line-height: 1.25; }
+a { color: var(--ilham-hijau); }
+
+.ilham_wadah { max-width: 1000px; margin: 0 auto; padding: 0 1rem; }
+
+.ilham_header { background: var(--ilham-hijau-tua); }
+.ilham_header_isi { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.ilham_logo { color: #fff; font-weight: bold; font-size: 1.3rem; text-decoration: none; padding: 1rem 0; }
+.ilham_menu { list-style: none; margin: 0; padding: 0; display: flex; gap: .3rem; flex-wrap: wrap; }
+.ilham_menu a { color: #fff; text-decoration: none; padding: .5rem .8rem; border-radius: 6px; display: block; }
+.ilham_menu a:hover, .ilham_menu a.ilham_aktif { background: var(--ilham-hijau); }
+.ilham_tombol_menu { display: none; background: var(--ilham-hijau); color: #fff; border: 0; padding: .5rem 1rem; border-radius: 6px; font-size: 1rem; }
+
+.ilham_hero { background: var(--ilham-muda); padding: 3rem 0; }
+.ilham_hero h1 { font-size: 2.2rem; margin-top: 0; }
+.ilham_judul_halaman { background: var(--ilham-muda); padding: 2rem 0; }
+.ilham_judul_halaman h1 { margin: 0 0 .3rem; }
+.ilham_judul_halaman p { margin: 0; color: var(--ilham-abu); }
+.ilham_bagian { padding: 2rem 0; }
+
+.ilham_kartu_baris { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1rem 0 2rem; }
+.ilham_kartu { border: 1px solid var(--ilham-garis); border-radius: 8px; padding: 1rem 1.2rem; }
+.ilham_kartu h3 { margin-top: 0; color: var(--ilham-hijau-tua); }
+
+.ilham_tombol { background: var(--ilham-hijau); color: #fff; border: 0; padding: .7rem 1.4rem; border-radius: 6px; font-size: 1rem; cursor: pointer; }
+.ilham_tombol:hover { background: var(--ilham-hijau-tua); }
+.ilham_form_cari { display: flex; gap: .5rem; flex-wrap: wrap; margin: 1rem 0; }
+.ilham_form_cari input, .ilham_form_cari select { padding: .7rem; border: 1px solid var(--ilham-garis); border-radius: 6px; font-size: 1rem; flex: 1; min-width: 180px; }
+.ilham_form label { display: block; margin-top: .8rem; font-weight: bold; }
+.ilham_form input, .ilham_form textarea { width: 100%; padding: .7rem; border: 1px solid var(--ilham-garis); border-radius: 6px; font-size: 1rem; font-family: inherit; }
+.ilham_form .ilham_tombol { margin-top: 1rem; }
+.ilham_dua_kolom { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.ilham_galat { color: #B3261E; min-height: 1.4em; margin: .5rem 0 0; }
+.ilham_sukses { color: var(--ilham-hijau); font-weight: bold; }
+.ilham_hasil { font-weight: bold; }
+
+.ilham_tabel { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.ilham_tabel th, .ilham_tabel td { border: 1px solid var(--ilham-garis); padding: .6rem .8rem; text-align: left; }
+.ilham_tabel th { background: var(--ilham-muda); }
+.ilham_status_ada { color: #0B6B52; font-weight: bold; }
+.ilham_status_tipis { color: #B26A00; font-weight: bold; }
+.ilham_status_habis { color: #B3261E; font-weight: bold; }
+
+.ilham_faq { border: 1px solid var(--ilham-garis); border-radius: 8px; margin-bottom: .8rem; }
+.ilham_faq_tanya { width: 100%; text-align: left; background: var(--ilham-muda); border: 0; padding: 1rem; font-size: 1rem; font-weight: bold; cursor: pointer; border-radius: 8px; }
+.ilham_faq_jawab { display: none; padding: 0 1rem; }
+.ilham_faq.ilham_buka .ilham_faq_jawab { display: block; }
+
+.ilham_footer { background: var(--ilham-hijau-tua); color: #fff; padding: 3rem 0 0; margin-top: 2rem; font-size: .95rem; overflow-x: hidden; }
+.ilham_footer p { margin: 0; }
+.ilham_footer_grid { display: grid; grid-template-columns: 1.4fr 1fr 1.3fr; gap: 2.5rem; padding-bottom: 2.5rem; }
+.ilham_footer_kolom { min-width: 0; }
+
+.ilham_footer_merek { display: inline-flex; align-items: center; gap: .6rem; color: #fff; text-decoration: none; margin-bottom: .9rem; }
+.ilham_footer_logo { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 10px; background: var(--ilham-muda); color: var(--ilham-hijau-tua); }
+.ilham_footer_nama { font-size: 1.25rem; font-weight: bold; }
+.ilham_footer_deskripsi { max-width: 38ch; color: var(--ilham-muda); line-height: 1.7; }
+
+.ilham_footer_judul { margin: 0 0 1rem; padding-bottom: .6rem; font-size: 1rem; border-bottom: 1px solid rgba(255, 255, 255, .18); }
+
+.ilham_footer_daftar { list-style: none; margin: 0; padding: 0; }
+.ilham_footer_daftar li { margin-bottom: .6rem; }
+.ilham_footer_daftar a { color: var(--ilham-muda); text-decoration: none; transition: color .2s, padding-left .2s; }
+.ilham_footer_daftar a:hover, .ilham_footer_daftar a:focus-visible { color: #fff; padding-left: .3rem; text-decoration: underline; text-underline-offset: 3px; }
+.ilham_footer_kontak li { display: flex; align-items: flex-start; gap: .6rem; color: var(--ilham-muda); overflow-wrap: anywhere; }
+.ilham_footer_ikon { flex: 0 0 18px; margin-top: .25rem; color: #fff; }
+
+.ilham_footer_bawah { border-top: 1px solid rgba(255, 255, 255, .18); padding: 1.1rem 0; text-align: center; color: var(--ilham-muda); font-size: .875rem; }
+
+@media (max-width: 900px) {
+  .ilham_footer_grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .ilham_footer_identitas { grid-column: 1 / -1; }
+  .ilham_footer_deskripsi { max-width: 60ch; }
+}
+
+@media (max-width: 768px) {
+  .ilham_footer { padding-top: 2.2rem; }
+  .ilham_footer_grid { grid-template-columns: 1fr; gap: 1.8rem; padding-bottom: 1.8rem; }
+  .ilham_kartu_baris, .ilham_dua_kolom { grid-template-columns: 1fr; }
+  .ilham_tombol_menu { display: block; }
+  .ilham_menu { display: none; flex-direction: column; width: 100%; padding-bottom: .8rem; }
+  .ilham_menu.ilham_tampil { display: flex; }
+  .ilham_header_isi nav { width: 100%; }
+  .ilham_hero h1 { font-size: 1.7rem; }
+  .ilham_tabel th, .ilham_tabel td { padding: .4rem; font-size: .9rem; }
+}
+
+.ilham_tombol_link { display: inline-block; text-decoration: none; margin-top: .5rem; }
+
+.ilham_kotak_kosong { border: 2px dashed var(--ilham-garis); background: var(--ilham-muda); color: var(--ilham-abu); border-radius: 8px; min-height: 160px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 1rem; }
+.ilham_kartu_baris .ilham_kotak_kosong { margin: 0; }
+.ilham_bagian img, .ilham_bagian iframe { max-width: 100%; border-radius: 8px; border: 0; }
+
+.ilham_foto { width: 100%; height: 260px; object-fit: cover; display: block; }
+.ilham_kartu_baris .ilham_kotak_kosong { min-height: 260px; }
+
+.ilham_info_kontak { list-style: none; margin: 0; padding: 0; }
+.ilham_info_kontak li { display: flex; align-items: flex-start; gap: .8rem; margin-bottom: 1rem; }
+.ilham_info_ikon { flex: 0 0 40px; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--ilham-muda); color: var(--ilham-hijau); }
+.ilham_info_kontak li > div { padding-top: .4rem; }
+.ilham_form .ilham_galat { min-height: 1.2em; margin-top: .3rem; }
+.ilham_form .ilham_tombol { transition: background .2s, transform .2s; margin-top: .6rem; }
+.ilham_form .ilham_tombol:hover { transform: translateY(-1px); }
+.ilham_catatan_form { margin: .6rem 0 0; color: var(--ilham-abu); font-size: .9rem; }
+
+.ilham_info_penting { background: var(--ilham-muda); border: 1px solid var(--ilham-garis); border-left: 5px solid var(--ilham-hijau); border-radius: 8px; padding: 1.2rem 1.5rem; }
+.ilham_info_penting h2 { margin: 0 0 .6rem; font-size: 1.3rem; color: var(--ilham-hijau-tua); }
+.ilham_info_penting ul { margin: 0; padding-left: 1.2rem; }
+.ilham_info_penting li { margin-bottom: .4rem; }
+.ilham_info_penting li:last-child { margin-bottom: 0; }
+
+.ilham_kartu_baris.ilham_kartu_tips { grid-template-columns: repeat(6, 1fr); }
+.ilham_kartu_tips .ilham_kartu { grid-column: span 2; }
+.ilham_kartu_tips .ilham_kartu:nth-child(4) { grid-column: 2 / span 2; }
+.ilham_kartu_tips .ilham_kartu:nth-child(5) { grid-column: 4 / span 2; }
+.ilham_kartu_tips .ilham_kartu_ikon { margin: 0 0 .8rem; }
+@media (max-width: 768px) {
+  .ilham_kartu_baris.ilham_kartu_tips { grid-template-columns: 1fr; }
+  .ilham_kartu_tips .ilham_kartu, .ilham_kartu_tips .ilham_kartu:nth-child(4), .ilham_kartu_tips .ilham_kartu:nth-child(5) { grid-column: auto; }
+}
+
+.ilham_halaman_tentang .ilham_wadah { max-width: 1140px; }
+.ilham_halaman_tentang .ilham_bagian { padding: 3rem 0; }
+.ilham_halaman_tentang .ilham_footer { margin-top: 0; }
+.ilham_bagian_muda { background: var(--ilham-muda); }
+
+.ilham_judul_bagian { text-align: center; font-size: 1.7rem; color: var(--ilham-hijau-tua); margin: 0 0 1.8rem; }
+.ilham_judul_bagian::after { content: ""; display: block; width: 48px; height: 3px; background: var(--ilham-hijau); border-radius: 2px; margin: .6rem auto 0; }
+
+.ilham_profil_teks { max-width: 780px; margin: 0 auto; text-align: center; font-size: 1.1rem; line-height: 1.85; }
+
+.ilham_foto_baris { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 0; }
+.ilham_foto_baris figure { margin: 0; }
+.ilham_bagian .ilham_foto_baris img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; display: block; border-radius: 12px; box-shadow: 0 6px 18px rgba(8, 76, 58, .15); }
+.ilham_foto_baris figcaption { color: var(--ilham-abu); font-size: .95rem; margin-top: .7rem; text-align: center; }
+
+.ilham_kartu_baris.ilham_kartu_tim { margin: 0; gap: 1.5rem; }
+.ilham_kartu_tim .ilham_kartu { padding: 1.8rem 1.4rem; border-radius: 12px; text-align: center; transition: transform .2s, box-shadow .2s, border-color .2s; }
+.ilham_kartu_tim .ilham_kartu:hover { transform: translateY(-3px); border-color: var(--ilham-hijau); box-shadow: 0 8px 20px rgba(8, 76, 58, .12); }
+.ilham_kartu_ikon { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; margin: 0 auto 1rem; border-radius: 50%; background: var(--ilham-muda); color: var(--ilham-hijau); }
+.ilham_kartu_tim .ilham_kartu h3 { font-size: 1.15rem; margin: 0 0 .4rem; }
+.ilham_kartu_tim .ilham_kartu p { margin: 0; color: var(--ilham-abu); }
+
+@media (max-width: 768px) {
+  .ilham_halaman_tentang .ilham_bagian { padding: 2.2rem 0; }
+  .ilham_judul_bagian { font-size: 1.4rem; margin-bottom: 1.4rem; }
+  .ilham_profil_teks { text-align: left; font-size: 1.02rem; line-height: 1.8; }
+  .ilham_foto_baris { gap: 1rem; }
+  .ilham_kartu_baris.ilham_kartu_tim { gap: 1rem; }
+}
+@media (max-width: 600px) {
+  .ilham_foto_baris { grid-template-columns: 1fr; }
+}
+
+.ilham_salam { margin: 0 0 .3rem; font-size: 1.2rem; color: var(--ilham-hijau); font-weight: bold; }
+.ilham_hero .ilham_salam + h1 { margin-top: 0; }
+.ilham_hitung { text-align: right; color: var(--ilham-abu); font-size: .9rem; margin: .2rem 0 0; }
