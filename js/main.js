@@ -64,7 +64,7 @@ if (formKontak) {
       galat.textContent = "Pesan harus diisi.";
     } else {
       galat.textContent = "";
-      var nomorWA = "628111091890";
+      var nomorWA = "6287722524699";
       var teks = "Halo Apotek Canna,\n\nNama: " + nama + "\nEmail: " + email + "\n\nPesan:\n" + pesan;
       var alamatWA = "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(teks);
       var jendela = window.open(alamatWA, "_blank");
